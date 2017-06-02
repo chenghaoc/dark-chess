@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-size: 60px;
+        background: #eee;
+      }
+      .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #333;
+        width: 80px;
+        height: 80px;
+        margin: 3px;
+        font-size: .5em;
+        
+        /*border-radius: 50%;*/
+        cursor: pointer;
+      }
+      .block.red {
+        border: 2px solid #ff3333;
+        color: #ff3333;
+      }
+
+      .block.back {
+        background: #333;
+        color: #333;
+        border: 2px solid #333;
+      }
+      .block.selected {
+        background: #ddd;
+      }
+      .row {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='app'></div>
+    
+    <div class='turn'>0</div>
+    <script src='chess.js'></script>
+    <script src='board.js'></script>
+  </body>
+</html>
